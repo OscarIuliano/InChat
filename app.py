@@ -19,7 +19,7 @@ if st.session_state.autenticato:
     st.write("🎉 Sei dentro l'applicazione messaggistica!")
     if st.button("🔒 Logout"):
         st.session_state.autenticato = False
-        st.experimental_rerun()
+        st.rerun()
 
 else:
     # Tabs per Login e Registrazione
@@ -32,7 +32,7 @@ else:
             if login(user, pwd):
                 st.session_state.autenticato = True
                 st.session_state.username = user
-                st.experimental_rerun()
+                st.rerun()
             else:
                 st.error("❌ Credenziali errate.")
 
