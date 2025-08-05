@@ -1,7 +1,7 @@
 import sqlite3
 import hashlib
 
-DB_NAME = "utenti.db"
+DB_NAME = "utenti2.db"
 
 def crea_tabella_utenti():
     conn = sqlite3.connect(DB_NAME)
