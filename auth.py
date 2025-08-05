@@ -1,7 +1,10 @@
 import sqlite3
 import hashlib
+import os
 
 DB_NAME = "utenti2.db"
+
+print("📁 DB path assoluto:", os.path.abspath(DB_NAME))
 
 def crea_tabella_utenti():
     conn = sqlite3.connect(DB_NAME)
